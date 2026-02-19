@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>APPLIED DYNAMIC AND CLINICAL PSYCHOLOGY</title>
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#B71C1C" />
+</head>
+<body>
+
+  <header>
+    <h1>📚 APPLIED DYNAMIC AND CLINICAL PSYCHOLOGY</h1>
+    <input type="text" id="search" placeholder="Ders ara..." />
+  </header>
+
+  <main id="list">
+
+    <div class="card">
+      <h2>Ders 1: Theory and Techniques of Clinical Intervention</h2>
+      <a href="https://drive.google.com/drive/folders/1-PybipNMUz3E38jnaKASI0_WvabMS13D?usp=drive_link" target="_blank">Klasörü Aç</a>
+    </div>
+
+    <div class="card">
+      <h2>Ders 2: Developmental Models of Social and Cultural Cognition</h2>
+      <a href="https://drive.google.com/drive/folders/10bMrUmnOKC9WN6PzQZfRF3S_VRMikF3h?usp=drive_link" target="_blank">Klasörü Aç</a>
+    </div>
+
+    <div class="card">
+      <h2>Ders 3: Methods of Assessments in Affective Neuroscience</h2>
+      <a href="https://drive.google.com/drive/folders/10WgN0gPK1sSoznSntSUauIQLdj2UNPzH?usp=drive_link" target="_blank">Klasörü Aç</a>
+    </div>
+
+  </main>
+
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js");
+  }
+
+  const search = document.getElementById("search");
+  search.addEventListener("keyup", function() {
+    const value = this.value.toLowerCase();
+    document.querySelectorAll(".card").forEach(card => {
+      card.style.display =
+        card.innerText.toLowerCase().includes(value)
+          ? "block"
+          : "none";
+    });
+  });
+</script>
+
+</body>
+</html>
