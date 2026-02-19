@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #B71C1C; /* Sapienza kırmızısı */
+  color: #111827;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  margin-top: 10px;
+}
+
+.card {
+  background: #F5F5F5; /* Açık gri */
+  margin: 15px;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+h2 {
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #B71C1C;
+  text-decoration: none;
+  font-weight: bold;
+}
