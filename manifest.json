@@ -1,0 +1,15 @@
+{
+  "name": "APPLIED DYNAMIC AND CLINICAL PSYCHOLOGY",
+  "short_name": "ADCP Dosyaları",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#B71C1C",
+  "theme_color": "#B71C1C",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
